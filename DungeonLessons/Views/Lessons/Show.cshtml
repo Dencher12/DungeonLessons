@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Lesson";
+}
+
+@using System.Web
+@model DungeonLessons.Models.Lesson
+@{
+    ViewBag.Title = "Lesson";
+}
+
+<h1> @Model.Title </h1>
+@Html.Raw(Model.Text)
