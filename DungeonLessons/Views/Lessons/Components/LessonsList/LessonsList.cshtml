@@ -1,0 +1,8 @@
+<ol id="lessons-list">
+    @foreach (var item in Model)
+    {
+        <div class="lesson-item border-bottom">
+            <a href="/Lessons/Show/@item.Id">@item.Title</a>
+        </div>
+    }
+</ol>

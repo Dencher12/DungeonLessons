@@ -1,12 +1,11 @@
-@{
-    ViewData["Title"] = "Lesson";
-}
-
-@using System.Web
+@using Microsoft.AspNetCore.Html
 @model DungeonLessons.Models.Lesson
 @{
-    ViewBag.Title = "Lesson";
+    ViewData["Title"] = Model.Title;
 }
 
 <h1> @Model.Title </h1>
-@Html.Raw(Model.Text)
+
+<div>
+    @(new HtmlString(Model.Text))
+</div>

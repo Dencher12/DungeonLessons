@@ -58,24 +58,70 @@ html {
   min-height: 100%;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  justify-self: right;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
 
 /* Custom shit */
-#lessons-link {
-  font-size: 3rem;
-  color: red;
+
+html, body
+{
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.lessons-link {
+  font-size: 2rem;
+  margin-left: 1rem;
 }
 
 #lessons-list {
   font-size: 2rem;
+  padding: 0;
+}
+
+.img {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.sidebar {
+  min-width: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+} 
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.content {
+  max-width: 75rem;
+}
+
+nav {
+  display: flex;
+}
+
+.copyright {
+  margin-left: 16px;
+}
+
+.lesson-item {
+  padding-left: 1.5rem;
 }

@@ -1,17 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-@model IEnumerable<DungeonLessons.Models.Lesson>
+﻿@model IEnumerable<DungeonLessons.Models.Lesson>
 @{
-    ViewBag.Title = "All lessons";
+    ViewBag.Title = "Dungeon";
 }
 
-<ol id="lessons-list">
-    @foreach (var item in Model)
-    {
-        <div>
-            <a href="/Lessons/Show/@item.Id">@item.Title</a>
-        </div>
-    }
-</ol>
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Dungeon</h1>
+</div>

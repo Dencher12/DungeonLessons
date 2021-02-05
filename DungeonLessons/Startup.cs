@@ -63,7 +63,7 @@ namespace DungeonLessons
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Lessons}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
