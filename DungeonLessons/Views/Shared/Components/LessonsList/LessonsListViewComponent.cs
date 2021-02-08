@@ -5,7 +5,7 @@ using DungeonLessons.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace DungeonLessons.Views.Lessons.Components.LessonsList
+namespace DungeonLessons.Components.LessonsList
 {
     public class LessonsListViewComponent : ViewComponent
     {
